@@ -1,11 +1,11 @@
-import Student from "../Student/Student";
+import Student from "./Student/Student";
 
-const StudentList = (props) => {
+const StudentList = ({students}) => {
   return (
     <>
-      {props.students.map(student => <Student key={student.name} student={student}/>)}
+      {students.map(student => <Student key={student.name} student={student}/>)}
     </>
   );
 }
 
-export default <StudentList></StudentList>;
+export default StudentList ;

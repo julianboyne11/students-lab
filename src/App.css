@@ -24,6 +24,13 @@
   color: white;
 }
 
+div  {
+  justify-content: center;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .App-link {
   color: #61dafb;
 }

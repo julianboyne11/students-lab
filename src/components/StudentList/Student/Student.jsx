@@ -5,7 +5,7 @@ const Student = ({student}) => {
     <>
       <h2>{student.name}</h2>
       <h4>{student.bio}</h4>
-        {student.scores.map(score => <Score score={score}/>)}
+        {student.scores.map(score => <Score key={score.date} score={score}/>)}
     </>
   );
 }

@@ -1,8 +1,10 @@
+import Card from 'react-bootstrap/Card';
+
 const Score = ({score}) => {
   return (
-    <>
-      <h3>The {score.date} had score of {score.score}</h3>
-    </>
+    <Card.Text>
+      <h5>{score.date} Score of {score.score}</h5>
+    </Card.Text>
   );
 }
 

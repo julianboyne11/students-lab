@@ -1,4 +1,5 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import StudentList from './components/StudentList/StudentList';
 
 
@@ -64,9 +65,9 @@ function App() {
     }
   ]
   return (
-    <div>
+      <>
       <StudentList students={students} />
-    </div>
+      </>
   )
 }
 

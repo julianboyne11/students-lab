@@ -1,12 +1,17 @@
 import Score from "./Score/Score";
+import Card from 'react-bootstrap/Card';
 
 const Student = ({student}) => {
   return (
-    <>
-      <h2>{student.name}</h2>
-      <h4>{student.bio}</h4>
+    <Card style={{ width: '18rem' }}>
+      <Card.Body>
+        <Card.Title>{student.name}</Card.Title>
+        <Card.Text>
+          {student.bio}
+        </Card.Text>
         {student.scores.map(score => <Score key={score.date} score={score}/>)}
-    </>
+      </Card.Body>
+    </Card>
   );
 }
 

@@ -1,5 +1,6 @@
 import Student from "./Student/Student";
 
+
 const StudentList = ({students}) => {
   return (
     <>
